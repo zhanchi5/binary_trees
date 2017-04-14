@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(TESTS_FOR_PROJECT Laboratory2)
+set(TESTS_FOR_PROJECT binary_trees)
 
 project(${TESTS_FOR_PROJECT}_tests)
 
