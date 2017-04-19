@@ -15,9 +15,9 @@ SCENARIO("search") {
     Binary_Search_Tree<unsigned int>* root;
     int a = int(10);
     int rv = r.insert(a);
-    int rv = r.search(10);
+    int rs = r.search(10);
     
-    REQUIRE( rv == 10);
+    REQUIRE( rs == true);
 }
 SCENARIO("remove") {
     Binary_Search_Tree<unsigned int> r;
