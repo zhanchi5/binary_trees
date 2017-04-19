@@ -12,14 +12,14 @@ SCENARIO("insert") {
 SCENARIO("search") {
     Binary_Search_Tree<unsigned int> r;
     Binary_Search_Tree<unsigned int>* root;
-    int rv = r.search(12);
+    int rv = r.search(10);
     
-    REQUIRE( rv == 12);
+    REQUIRE( rv == 10);
 }
 SCENARIO("remove") {
     Binary_Search_Tree<unsigned int> r;
     Binary_Search_Tree<unsigned int>* root;
     int rv = r.search(13);
     
-    REQUIRE( rv == 13);
+    REQUIRE( rv == 0);
 }
