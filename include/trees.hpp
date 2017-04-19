@@ -64,7 +64,6 @@ bool Binary_Search_Tree<T>::search(T d)
     bool found = false;
     if(isEmpty())
     {
-        cout<<" This Tree is empty! "<<endl;
         return false;
     }
     tree_node* curr;
@@ -85,15 +84,6 @@ bool Binary_Search_Tree<T>::search(T d)
             else curr = curr->left;
         }
     }
-    if(!found)
-    {
-        cout<<" Data not found! "<<endl;
-    }
-    else
-    {
-        cout<<" Data found! "<<endl;
-    }
-
     return found;
 }
 
@@ -103,8 +93,7 @@ void Binary_Search_Tree<T>::remove(T d)
     bool found = false;
     if(isEmpty())
     {
-        cout<<" This Tree is empty! "<<endl;
-        return;
+      return;
     }
     tree_node* curr;
     tree_node* parent;
@@ -126,8 +115,7 @@ void Binary_Search_Tree<T>::remove(T d)
     }
     if(!found)
     {
-        cout<<" Data not found! "<<endl;
-        return;
+       return;
     }
 
     // Node with single child
@@ -230,19 +218,4 @@ void Binary_Search_Tree<T>::print_tree()
     inorder(root,level);
 }
 
-template<class T>
-void Binary_Search_Tree<T>::inorder(tree_node* p, unsigned int level) {
-    if (!p) return;
 
-    level++;
-    inorder(p->right, level);
-
-    for (unsigned int i = 0; i < level; ++i) {
-        cout << "- ";
-    }
-    cout << p->data << endl;
-
-    inorder(p->left, level);
-    level--;
-
-}
