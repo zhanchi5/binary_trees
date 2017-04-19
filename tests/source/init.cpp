@@ -5,7 +5,6 @@ Binary_Search_Tree<unsigned int> r;
 
 
 SCENARIO("insert") {    
-    int a = int(10);
     int rv = r.insert(a);
     
     REQUIRE( rv == 10);
@@ -21,5 +20,5 @@ SCENARIO("search") {
 SCENARIO("remove") {
     int rv = r.search(10);
     
-    REQUIRE( rv == false);
+    REQUIRE( rv == 0);
 }
