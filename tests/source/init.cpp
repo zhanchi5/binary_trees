@@ -1,29 +1,31 @@
-//Scenarios for tests will be posted here later
-
 #include <trees.hpp>
 #include <catch.hpp>
 
-  Binary_Search_Tree<int>b;
-  Binary_Search_Tree<unsigned int>* root =0;
-
-SCENARIO("insert", "[Binary_Search_Tree<T>::insert]"){
-  
-   unsigned int rv = b.insert(100);
-  
-    REQUARE (rv == 100);
+SCENARIO("insert") {
+    BinarySearchTree<unsigned int> r;
+    BinarySearchTree<unsigned int>* root;
+    int rv = r.Add(10, root);
+    
+    REQUIRE( rv == 10);
 }
-
-SCENARIO("remove", "[Binary_Search_Tree<T>::remove]"){
-  Binary_Search_Tree<int>b;
-  Binary_Search_Tree<unsigned int>* root;
-  
-  int rv.insert(100);
-  int rv = b.remove(100);
-  bool answer;
-  if (!rv){
-    REQUARE( answer = true);
-  }
-  else{
-    REQUARE (answer = false);
-  }
-  
+SCENARIO("print_tree") {
+    BinarySearchTree<unsigned int> r;
+    BinarySearchTree<unsigned int>* root;
+    int rv = r.print(11, root);
+    
+    REQUIRE( rv == 11);
+}
+SCENARIO("search") {
+    BinarySearchTree<unsigned int> r;
+    BinarySearchTree<unsigned int>* root;
+    int rv = r.Search(12, root);
+    
+    REQUIRE( rv == 12);
+}
+SCENARIO("remove") {
+    BinarySearchTree<unsigned int> r;
+    BinarySearchTree<unsigned int>* root;
+    int rv = r.Search(13, root);
+    
+    REQUIRE( rv == 13);
+}
