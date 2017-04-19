@@ -22,13 +22,13 @@ public:
     bool isEmpty() const { return root==NULL; };
     void print_tree();
     void inorder(tree_node*, unsigned int level);
-    void insert(T);
+    int insert(T);
     void remove(T);
     bool search(T);
 };
 
 template <class T>
-void Binary_Search_Tree<T>::insert(T d)
+int Binary_Search_Tree<T>::insert(T d)
 {
     tree_node* t = new tree_node;
     tree_node* parent;
