@@ -4,7 +4,8 @@
 SCENARIO("insert") {
     Binary_Search_Tree<unsigned int> r;
     Binary_Search_Tree<unsigned int>* root;
-    int rv = r.insert(10);
+    int a = int(10)
+    int rv = r.insert(a);
     
     REQUIRE( rv == 10);
 }
