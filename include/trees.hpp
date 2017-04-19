@@ -23,7 +23,7 @@ public:
     void print_tree();
     void inorder(tree_node*, unsigned int level);
     int insert(T);
-    void remove(T);
+    int remove(T);
     bool search(T);
 };
 
@@ -88,7 +88,7 @@ bool Binary_Search_Tree<T>::search(T d)
 }
 
 template <class T>
-void Binary_Search_Tree<T>::remove(T d)
+int Binary_Search_Tree<T>::remove(T d)
 {
     bool found = false;
     if(isEmpty())
