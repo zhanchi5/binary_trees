@@ -17,7 +17,7 @@ SCENARIO("remove"){
     int rv = r.insert(a);
     bool answer;
     r.remove(10);
-    if (isEmpty()){
+    if (r.isEmpty()){
         answer = true;
     }
     else{
