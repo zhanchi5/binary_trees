@@ -11,10 +11,4 @@ SCENARIO("search") {
     
     REQUIRE( rs == true);
 }
-SCENARIO("remove") {
-    int ri = r.insert(10);
-    int rr = r.remove(10);
-    int rv = r.search(10);
-    
-    REQUIRE( rv == 0);
-}
+
