@@ -16,6 +16,7 @@ SCENARIO("remove"){
     int a = int(10);
     int rv = r.insert(a);
     r.remove(a);
+    bool answer
     if (!r.search(10)){
         answer = true;
     }
