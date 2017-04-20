@@ -1,6 +1,13 @@
 #include <trees.hpp>
 #include <catch.hpp>
 
+SCENARIO("isEmpty"){
+    Binary_Search_Tree<unsigned int> r;
+    bool answer = r.isEmpty();
+    
+    REQUIRE( answer == true );
+}
+
 SCENARIO("search") {
     
     Binary_Search_Tree<unsigned int> r;
@@ -17,5 +24,6 @@ SCENARIO("remove"){
     int get_answer = r.search(10);
     
     REQUIRE( get_answer == false);
-
 }
+
+
