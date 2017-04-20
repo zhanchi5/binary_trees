@@ -13,7 +13,7 @@ SCENARIO("search") {
 }
 
 SCENARIO("remove"){
-    r.remove(a);
+    r.remove(10);
     bool answer = r.search(10);
     
     REQUIRE( answer == false);
