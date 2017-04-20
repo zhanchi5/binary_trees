@@ -11,7 +11,7 @@ SCENARIO("search") {
     REQUIRE( get_request == true);
 }
 
-/*SCENARIO("remove"){
+SCENARIO("remove"){
     
     Binary_Search_Tree<unsigned int> r;
     int a = int(10);
@@ -21,4 +21,4 @@ SCENARIO("search") {
     
     REQUIRE( get_answer == false);
 
-}*/
+}
