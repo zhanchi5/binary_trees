@@ -16,7 +16,7 @@ SCENARIO("remove"){
     int a = int(10);
     int rv = r.insert(a);
     r.remove(a);
-    int answer = r.search(10)
+    int answer = r.search(10);
     
     REQUIRE( answer == false);
 }
