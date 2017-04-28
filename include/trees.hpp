@@ -1,4 +1,3 @@
-//FUnctions will be posted here later
 #include <iostream>
 #include <stdlib.h>
 
